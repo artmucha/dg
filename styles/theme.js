@@ -1,6 +1,8 @@
 export const theme = {
-  black: '#1a1a1a',
+  background: '#121212',
+  surface: '#272727',
   white: '#ffffff',
+  primary: '#5E35B1',
 
   light: 300,
   regular: 400,

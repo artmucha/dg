@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: #121212;
   }
 
+  h1 {
+    color: #b621fe;
+  }
+
   ul {
     list-style-type: none;
   }
