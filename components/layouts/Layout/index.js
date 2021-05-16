@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 import { Header, Menu, MenuOverlay, MenuHeader, MenuNavigation, MenuList, Footer, FooterCopyright } from './styles';
 import Container from 'components/layouts/Container';
+import Button from 'components/atoms/Button';
 
 import MenuIcon from '../../../public/icons/menu-button.svg';
 
@@ -53,6 +54,8 @@ const Layout = ({ children, title = 'dlagracza'}) => {
               </MenuList>
             </MenuNavigation>
           </Menu>
+          <Link href='/login'><a><Button text>Zaloguj</Button></a></Link>
+          <Link href='/rejestracja'><a><Button>Zarejestruj</Button></a></Link>
         </Container>
       </Header>
 
