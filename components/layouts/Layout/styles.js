@@ -31,6 +31,7 @@ export const Menu = styled.aside`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform .2s linear;
   z-index: 999;
+  box-shadow: 0 8px 10px -5px rgb(0 0 0 / 20%), 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%);
   background-color: ${({ theme }) => theme.surface};
 `;
 
