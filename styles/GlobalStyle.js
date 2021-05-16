@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-size: 16px;
     font-family: 'Kumbh Sans', sans-serif;
-    color: #1a1a1a;
+    color: #ffffff;
     background-color: #121212;
   }
 
