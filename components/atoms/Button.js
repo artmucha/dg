@@ -7,11 +7,13 @@ const Button = styled.button`
   cursor: pointer;
   text-align: center;
   font-family: 'Kumbh Sans', sans-serif;
-  border-radius: 4px;
-  font-size: ${({ theme }) => theme.fontSize.s};
+  border-radius: 2px;
+  text-transform: uppercase;  
+  background-color: transparent;
+  letter-spacing: 1px;
+  font-size: ${({ theme }) => theme.fontSize.xs};
   color: ${({ theme }) => theme.primary};
   border: 1px solid ${({ theme }) => theme.primary};
-  background-color: transparent;
 
   ${({ text }) =>
     text &&

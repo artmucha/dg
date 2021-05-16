@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { Header, Menu, MenuOverlay, MenuHeader, MenuNavigation, MenuList, Footer, FooterCopyright } from './styles';
 import Container from 'components/layouts/Container';
 import Button from 'components/atoms/Button';
+import IconButton from 'components/atoms/IconButton';
 
 import MenuIcon from '../../../public/icons/menu-button.svg';
 
@@ -34,8 +35,10 @@ const Layout = ({ children, title = 'dlagracza'}) => {
         <link href='https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap' rel='stylesheet'/>
       </Head>
       <Header>
-        <Container flex spaceBetween>
-          <MenuIcon onClick={() => setOpen(!open)} />
+        <Container flex spaceBetween alignCenter>
+          <IconButton fill="#ffffff" onClick={() => setOpen(!open)}>
+            <MenuIcon />
+          </IconButton>
           dlagracza
           <MenuOverlay open={open} onClick={() => setOpen(!open)} />
           <Menu open={open}>

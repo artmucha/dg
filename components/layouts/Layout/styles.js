@@ -40,7 +40,7 @@ export const MenuNavigation = styled.nav`
 
 export const MenuHeader = styled.div`
   width: 100%;
-  padding: 10px 20px;
+  padding: 18px 20px;
   font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: ${({ theme }) => theme.bold};
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -55,6 +55,7 @@ export const MenuList = styled.ul`
   a {
     display: block;
     padding: 10px;
+    border-radius: 2px;
     font-weight: ${({ theme }) => theme.bold};
     color: ${({ theme }) => theme.textprimary};
 
