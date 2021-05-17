@@ -11,7 +11,7 @@ const Button = styled.button`
   text-transform: uppercase;  
   background-color: transparent;
   letter-spacing: 1px;
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-size: ${({ theme }) => theme.fontSize.s};
   color: ${({ theme }) => theme.primary};
   border: 1px solid ${({ theme }) => theme.primary};
 

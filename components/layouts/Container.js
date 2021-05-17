@@ -26,10 +26,16 @@ const Container = styled.div`
       justify-content: space-between;
     `}
   
-    ${({ flexStart }) =>
+  ${({ flexStart }) =>
     flexStart &&
     css`
       justify-content: flex-start;
+    `}
+
+  ${({ flexEnd }) =>
+    flexEnd &&
+    css`
+      justify-content: flex-end;
     `}
 
 	${({ alignCenter }) =>

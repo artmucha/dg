@@ -3,13 +3,14 @@ import Link from 'next/link';
 import Router from 'next/router';
 import { useState, useEffect } from 'react';
 
-import { Header, Menu, MenuOverlay, MenuHeader, MenuNavigation, MenuList, Footer, FooterCopyright } from './styles';
+import { Header, Menu, MenuOverlay, MenuHeader, MenuNavigation, MenuList, Footer, FooterCopyright, Buttons } from './styles';
 import Container from 'components/layouts/Container';
 import Button from 'components/atoms/Button';
 import IconButton from 'components/atoms/IconButton';
 import Input from 'components/atoms/Input';
 
 import MenuIcon from '../../../public/icons/menu-button.svg';
+import UserIcon from '../../../public/icons/user.svg'
 
 import menu from 'constans/menu';
 
@@ -58,9 +59,15 @@ const Layout = ({ children, title = 'dlagracza'}) => {
               </MenuList>
             </MenuNavigation>
           </Menu>
-          <Input type="search" placeholder="Szukaj gier..." />
-          <Link href='/login'><a><Button text>Zaloguj</Button></a></Link>
-          <Link href='/rejestracja'><a><Button>Zarejestruj</Button></a></Link>
+          <Container flex flexEnd fluid>
+            <Input type="search" placeholder="Szukaj gier..." />
+            <Buttons>
+              <Link href='/login'><a><Button>Zaloguj</Button></a></Link>
+              <Link href='/profil'>
+                <a><IconButton><UserIcon fill="#ffffff" /></IconButton></a>
+              </Link>
+            </Buttons>
+          </Container>
         </Container>
       </Header>
 

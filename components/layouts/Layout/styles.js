@@ -90,3 +90,15 @@ export const FooterCopyright = styled.p`
     color: inherit;
   }
 `;
+
+export const Buttons = styled.div`
+  display: flex;
+  align-items: center;
+  button {
+    margin-left: 10px;
+
+    @media(min-width: 992px) {
+      margin-left: 15px;
+    }
+  }
+`;
