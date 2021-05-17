@@ -6,6 +6,7 @@ export const theme = {
   textthirtary: 'rgba(255, 255, 255, 0.4)',
   primary: '#5E35B1',
   action: 'rgba(255, 255, 255, 0.08)',
+  border: 'rgba(255, 255, 255, 0.12)',
 
   light: 300,
   regular: 400,

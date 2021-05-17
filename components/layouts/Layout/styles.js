@@ -44,7 +44,7 @@ export const MenuHeader = styled.div`
   padding: 18px 20px;
   font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: ${({ theme }) => theme.bold};
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid ${({ theme }) => theme.border};
 `;
 
 export const MenuList = styled.ul`

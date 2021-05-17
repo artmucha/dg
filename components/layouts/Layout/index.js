@@ -7,6 +7,7 @@ import { Header, Menu, MenuOverlay, MenuHeader, MenuNavigation, MenuList, Footer
 import Container from 'components/layouts/Container';
 import Button from 'components/atoms/Button';
 import IconButton from 'components/atoms/IconButton';
+import Input from 'components/atoms/Input';
 
 import MenuIcon from '../../../public/icons/menu-button.svg';
 
@@ -57,6 +58,7 @@ const Layout = ({ children, title = 'dlagracza'}) => {
               </MenuList>
             </MenuNavigation>
           </Menu>
+          <Input type="search" placeholder="Szukaj gier..." />
           <Link href='/login'><a><Button text>Zaloguj</Button></a></Link>
           <Link href='/rejestracja'><a><Button>Zarejestruj</Button></a></Link>
         </Container>
