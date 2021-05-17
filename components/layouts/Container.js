@@ -44,6 +44,12 @@ const Container = styled.div`
       flex-direction: column;
     `}
 
+    ${({ fluid }) =>
+      fluid &&
+      css`
+        max-width: 100%;
+      `}
+
     @media (min-width: 768px) {
       padding-left: 15px;
       padding-right: 15px;

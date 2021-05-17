@@ -35,7 +35,7 @@ const Layout = ({ children, title = 'dlagracza'}) => {
         <link href='https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap' rel='stylesheet'/>
       </Head>
       <Header>
-        <Container flex spaceBetween alignCenter>
+        <Container fluid flex spaceBetween alignCenter>
           <IconButton fill="#ffffff" onClick={() => setOpen(!open)}>
             <MenuIcon />
           </IconButton>
