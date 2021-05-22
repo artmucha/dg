@@ -1,9 +1,15 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Box = styled.div`
   border-radius: 6px;
-  border: 1px solid ${({ theme }) => theme.border};
+  border: 0;
   background-color: ${({ theme }) => theme.surface};
+
+  ${({ outline }) =>
+    outline &&
+    css`
+      border: 1px solid ${({ theme }) => theme.border};
+  `}
 `;
 
 export default Box;

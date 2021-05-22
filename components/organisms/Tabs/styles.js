@@ -10,7 +10,7 @@ export const TabButton = styled.button`
   cursor: pointer;
   border: 0;
   outline: 0;
-  flex: 0 0 1;
+  flex: 1;
   padding: 15px;
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: ${({ theme }) => theme.bold};
@@ -21,6 +21,7 @@ export const TabButton = styled.button`
   ${({ selected }) =>
     selected &&
     css`
+      border: 0;
       background-color: transparent;
       color: ${({ theme }) => theme.textprimary};
     `}
