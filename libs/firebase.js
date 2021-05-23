@@ -1,6 +1,6 @@
+// import * as admin from 'firebase-admin';
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import * as admin from 'firebase-admin';
 
 const config = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_PUBLIC_API_KEY,
@@ -15,24 +15,24 @@ export const initFirebase = () => {
   }
 };
 
-export const verifyIdToken = (token) => {
-  const firebasePrivateKey = process.env.FIREBASE_PRIVATE_KEY;
+// export const verifyIdToken = (token) => {
+//   const firebasePrivateKey = process.env.FIREBASE_PRIVATE_KEY;
 
-  if (!admin.apps.length) {
-    admin.initializeApp({
-      credential: admin.credential.cert({
-        projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-        clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-        privateKey: firebasePrivateKey.replace(/\\n/g, '\n'),
-      }),
-      databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
-    })
-  };
+//   if (!admin.apps.length) {
+//     admin.initializeApp({
+//       credential: admin.credential.cert({
+//         projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+//         clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+//         privateKey: firebasePrivateKey.replace(/\\n/g, '\n'),
+//       }),
+//       databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
+//     })
+//   };
 
-  return admin
-    .auth()
-    .verifyIdToken(token)
-    .catch((error) => {
-      throw error
-    })
-};
+//   return admin
+//     .auth()
+//     .verifyIdToken(token)
+//     .catch((error) => {
+//       throw error
+//     })
+// };
