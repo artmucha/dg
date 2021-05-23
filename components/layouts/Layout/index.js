@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import { useState, useEffect } from 'react';
 
+import { useUser } from 'hooks/useUser';
 import { Header, Menu, MenuOverlay, MenuHeader, MenuNavigation, MenuList, Footer, FooterCopyright, Buttons } from './styles';
 import Container from 'components/layouts/Container';
 import Button from 'components/atoms/Button';
@@ -16,6 +17,7 @@ import menu from 'constans/menu';
 
 const Layout = ({ children, title = 'dlagracza'}) => {
   const [open, setOpen] = useState(false);
+  const user = useUser();
 
   useEffect(() => {
 		Router.events.on("routeChangeStart", () => { 
@@ -62,10 +64,15 @@ const Layout = ({ children, title = 'dlagracza'}) => {
           <Container flex flexEnd fluid>
             <Input type="search" placeholder="Szukaj gier..." />
             <Buttons>
+
+            {!user ? (
               <Link href='/login'><a><Button>Zaloguj</Button></a></Link>
+            ) : (
               <Link href='/profil'>
                 <a><IconButton><UserIcon fill="#ffffff" /></IconButton></a>
               </Link>
+            )}
+
             </Buttons>
           </Container>
         </Container>

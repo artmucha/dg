@@ -66,6 +66,12 @@ const Container = styled.div`
         padding-top: 40px;
       `}
     }
+
+    ${({ fill }) =>
+      fill &&
+      css`
+        min-height: 80vh;
+      `}
 `;
 
 export default Container;
