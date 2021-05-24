@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const FormWrapper = styled.form`
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 100%;
-  min-width: 400px;
+  max-width: 400px;
   padding: 15px;
   background-color: ${({ theme }) => theme.surface};
 
