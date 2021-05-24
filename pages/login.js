@@ -42,7 +42,6 @@ const Login = () => {
 
   const handleChange = (event) => {
     setData({ ...data, [event.target.name]: event.target.value });
-    console.log(data)
   };
 
   const handleLogin = async(event) => {
@@ -68,7 +67,6 @@ const Login = () => {
   };
 
   const handleSignup = async(event) => {
-    console.log('click')
     event.preventDefault();
     setSubmitting(true);
     try {

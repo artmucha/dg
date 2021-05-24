@@ -17,7 +17,7 @@ import menu from 'constans/menu';
 
 const Layout = ({ children, title = 'dlagracza'}) => {
   const [open, setOpen] = useState(false);
-  const user = useUser();
+  const { user } = useUser();
 
   useEffect(() => {
 		Router.events.on("routeChangeStart", () => { 
