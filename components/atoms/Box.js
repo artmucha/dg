@@ -10,6 +10,12 @@ const Box = styled.div`
     css`
       border: 1px solid ${({ theme }) => theme.border};
   `}
+
+  ${({ padding }) =>
+    padding &&
+    css`
+      padding: 15px;
+  `}
 `;
 
 export default Box;

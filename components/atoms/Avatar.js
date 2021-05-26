@@ -5,6 +5,7 @@ const Avatar = styled.img`
   width: 100%;
   max-width: 128px;
   height: auto;
+  max-height: 128px;
   object-fit: cover;
   border: 0;
   border-radius: 50%;
