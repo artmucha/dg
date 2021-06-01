@@ -50,10 +50,16 @@ const Container = styled.div`
       flex-direction: column;
     `}
 
-    ${({ fluid }) =>
-      fluid &&
+  ${({ fluid }) =>
+    fluid &&
+    css`
+      max-width: 100%;
+    `}
+
+    ${({ small }) =>
+      small &&
       css`
-        max-width: 100%;
+        max-width: 400px;
       `}
 
     @media (min-width: 768px) {
