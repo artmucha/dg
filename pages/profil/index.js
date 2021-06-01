@@ -2,6 +2,11 @@ import Layout from 'components/layouts/Layout';
 import Container from 'components/layouts/Container';
 import Box from 'components/atoms/Box';
 import Avatar from 'components/atoms/Avatar';
+import Typography from 'components/atoms/Typography';
+
+import Gamepad from '../../public/icons/gamepad.svg';
+import Heart from '../../public/icons/favorite.svg';
+import Pencil from '../../public/icons/pencil.svg';
 
 const Profile = () => (
   <Layout>
@@ -9,22 +14,31 @@ const Profile = () => (
       <Avatar src="/ArturMucha.jpg" />
     </Container>
     <Container flex space column alignCenter>
-      <h1>Artur Mucha</h1>
-      <h2>@artmuc</h2>
+      <Typography as="h1" bold>Artur Mucha</Typography>
+      <Typography as="h2" fontSize="s" color="textthirtary">@artmuc</Typography>
     </Container>
     <Container space>
-      <h3>GRY</h3>
+      <Typography as="h3">GRY</Typography>
     </Container>
     <Container space flex spaceBetween>
-      <Box padding>MAM</Box>
-      <Box padding>CHCĘ</Box>
-      <Box padding>OCENIŁEM</Box>
+      <Box padding>
+        <Gamepad fill="#ffffff" />
+        <Typography as="span" fontSize="xs" color="textsecondary">Mam</Typography>
+      </Box>
+      <Box padding>
+        <Heart fill="#ffffff" />
+        <Typography as="span" fontSize="xs" color="textsecondary">Chcę</Typography>
+      </Box>
+      <Box padding>
+        <Pencil fill="#ffffff" />
+        <Typography as="span" fontSize="xs" color="textsecondary">Oceniłem</Typography>
+      </Box>
     </Container>
     <Container space>
-      <h3>AKTYWNOŚĆ</h3>
+      <Typography as="h3">AKTYWNOŚĆ</Typography>
     </Container>
     <Container space>
-      <h3>POZNAJ GRACZY</h3>
+      <Typography as="h3">POZNAJ GRACZY</Typography>
     </Container>
   </Layout>
 );

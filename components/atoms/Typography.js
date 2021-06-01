@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 const Typography = styled.div`
   display: block;
+  line-height: 1.5;
   font-weight: ${({ theme }) => theme.regular};
   color: ${({ theme, color }) => (color ? theme[color] : theme.textprimary)};
   font-size: ${({ theme, fontSize }) => (fontSize ? theme.fontSize[fontSize] : '16px')};
