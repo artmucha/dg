@@ -19,12 +19,29 @@ const Typography = styled.div`
       font-weight: ${({ theme }) => theme.bold};
   `}
 
-  ${({ space }) => 
-    space &&
+  ${({ mt }) => 
+    mt &&
     css`
-      margin: 20px 0;
+      margin-top: ${({ mt }) => mt};
     `}
 
+  ${({ mr }) => 
+    mr &&
+    css`
+      margin-right: ${({ mr }) => mr};
+    `}
+
+  ${({ mb }) => 
+    mb &&
+    css`
+      margin-bottom: ${({ mb }) => mb};
+    `}
+
+  ${({ ml }) => 
+    ml &&
+    css`
+      margin-left: ${({ ml }) => ml};
+    `}
 `;
 
 export default Typography;
