@@ -7,6 +7,7 @@ export const theme = {
   primary: '#5E35B1',
   action: 'rgba(255, 255, 255, 0.08)',
   border: 'rgba(255, 255, 255, 0.12)',
+  brand: '#b621fe',
 
   light: 300,
   regular: 400,
